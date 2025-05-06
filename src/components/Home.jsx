@@ -10,7 +10,7 @@ import {
   Box
 } from '@mui/material';
 
-function HomePage() {
+function HomePage({ mode, toggleTheme }) {
   const [emiUSD, setEmiUSD] = useState(null); // EMI in USD
   const [scheduleUSD, setScheduleUSD] = useState([]); // Schedule in USD
   const [selectedCurrency, setSelectedCurrency] = useState('USD');
@@ -71,7 +71,7 @@ function HomePage() {
 
   return (
     <>
-      <BasicExample />
+      <BasicExample  mode={mode} toggleTheme={toggleTheme} />
       <Container maxWidth="md">
         <Box mt={5} textAlign="center">
           <Typography variant="h4" gutterBottom>

@@ -1,4 +1,9 @@
+
+
+
 /* Navbar */
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -9,7 +14,9 @@
     position: relative;
     z-index: 1; /* Lower than fullscreen menu */
   }
-  
+  .navbar-brand{
+    color: white;
+  }
   /* Hamburger icon */
   .hamburger {
     width: 30px;
