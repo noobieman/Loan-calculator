@@ -1,0 +1,129 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d6efd;
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+    z-index: 1; /* Lower than fullscreen menu */
+  }
+  
+  /* Hamburger icon */
+  .hamburger {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  /* Hamburger bar lines */
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  
+  /* Hamburger open animation */
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+  
+  .fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f4f4;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    pointer-events: none; /* prevent clicks when hidden */
+    opacity: 0;
+  }
+  .fullscreen-menu.slide-in {
+    transform: translateY(0%);
+    pointer-events: all;
+    opacity: 1;
+  }
+  .fullscreen-menu.slide-out {
+    transform: translateY(-100%);
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    z-index: 11;
+  }
+  
+  /* Menu list */
+  .fullscreen-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .fullscreen-menu li {
+    font-size: 28px;
+    margin: 20px 0;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .fullscreen-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .fullscreen-menu ul li {
+    margin: 20px 0;
+    font-size: 24px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .fullscreen-menu ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .fullscreen-menu ul li:hover::after {
+    width: 60%;
+  }
+  
