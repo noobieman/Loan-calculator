@@ -1,3 +1,12 @@
+/**
+ * The Navbar component in this React application includes a theme toggle button and a responsive menu
+ * for navigation.
+ * @returns The `Navbar` component is being returned. It consists of a navigation bar with a brand name
+ * "Loan Calculator", a theme toggle button that switches between light and dark mode, a hamburger menu
+ * icon for mobile view, and a fullscreen menu that slides in and out when the hamburger menu icon is
+ * clicked. The fullscreen menu contains links to different pages like Home, Exchange Rate Live, and
+ * Error Page.
+ */
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';

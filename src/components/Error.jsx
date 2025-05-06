@@ -1,3 +1,9 @@
+/**
+ * The `ErrorPage` function in JavaScript React renders a 404 error page with a message and a button to
+ * navigate back to the home page.
+ * @returns The `ErrorPage` component is being returned. It includes a Navbar component, a Box
+ * component with error message content, and a Button to navigate to the home page.
+ */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Typography, Button, useTheme } from '@mui/material';

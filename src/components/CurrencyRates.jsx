@@ -1,3 +1,10 @@
+/**
+ * The `CurrencyRates` function in CurrencyRates.jsx fetches and displays currency exchange rates based
+ * on USD, with pagination for navigation.
+ * @returns The `CurrencyRates` component is being returned. It fetches currency exchange rates based
+ * on USD from an API, displays the rates in a table with pagination, and includes a basic example
+ * component for the navbar.
+ */
 // CurrencyRates.jsx
 import React, { useEffect, useState } from 'react';
 import {

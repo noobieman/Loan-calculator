@@ -1,3 +1,5 @@
+/* The above code is a React component named `HomePage` that serves as a loan calculator dashboard.
+Here is a summary of what the code does: */
 import React, { useState } from 'react';
 import BasicExample from './Navbar';
 import useFetch from './useFetch';
